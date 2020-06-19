@@ -16,6 +16,7 @@ import {
 import * as fs from 'fs';
 import * as path from 'path';
 import * as shapefile from 'shpjs';
+import * as tcx from "tcx";
 import * as togeojson from '@mapbox/togeojson';
 import * as topojson from 'topojson-client';
 import * as xmldom from 'xmldom';
@@ -380,6 +381,14 @@ export class MapView {
         case '.wkt':
           // just pass through raw string content
           this._mapData = this._content;
+          this.refreshMapView();
+          break;
+        case '.tcx':
+          // parse tcx
+          const tcxXml = new xmldom.DOMParser().parseFromString(this._content);
+          // convert it to geojson
+          this._mapData = tcx(tcxXml);
+          this.createGeoJsonFile(this._mapData);
           this.refreshMapView();
           break;
         case '.gpx':

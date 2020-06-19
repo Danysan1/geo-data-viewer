@@ -213,6 +213,7 @@ function initializeMap(keplerGl, store, config, data, dataType) {
       break;
     case 'geo.json':
     case '.geojson':
+    case '.tcx':
     case '.gpx':
     case '.kml':
     case '.shp':

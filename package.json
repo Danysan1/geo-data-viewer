@@ -22,6 +22,7 @@
     "geo data viewer",
     "transform geo data",
     "map view 🗺️",
+    "TCX",
     "GPX",
     "IGC",
     "KML",
@@ -58,6 +59,7 @@
     "onCommand:map.gallery",
     "onWebviewPanel:map.view",
     "onLanguage:csv",
+    "onLanguage:tcx",
     "onLanguage:gpx",
     "onLanguage:igc",
     "onLanguage:json",
@@ -88,6 +90,15 @@
         ],
         "aliases": [
           "GML"
+        ]
+      },
+      {
+        "id": "tcx",
+        "extensions": [
+          ".tcx"
+        ],
+        "aliases": [
+          "TCX"
         ]
       },
       {
@@ -197,21 +208,21 @@
       "explorer/context": [
         {
           "command": "map.view",
-          "when": "resourceFilename =~ /.*\\.(csv|igc|gml|gpx|json|geojson|kgl|kml|shp|topojson|wkt)/",
+          "when": "resourceFilename =~ /.*\\.(csv|igc|gml|tcx|gpx|json|geojson|kgl|kml|shp|topojson|wkt)/",
           "group": "navigation"
         }
       ],
       "editor/title": [
         {
           "command": "map.view",
-          "when": "resourceFilename =~ /.*(gpx|.geo.json|.geojson|.gml|.igc|.kgl.json|keplergl.json|keplergl_time.json|.kml|.map.json|.shp|.topo.json|.topojson|.wkt)/",
+          "when": "resourceFilename =~ /.*(tcx|gpx|.geo.json|.geojson|.gml|.igc|.kgl.json|keplergl.json|keplergl_time.json|.kml|.map.json|.shp|.topo.json|.topojson|.wkt)/",
           "group": "navigation"
         }
       ],
       "editor/title/context": [
         {
           "command": "map.view",
-          "when": "resourceFilename =~ /.*\\.(csv|igc|json|gml|gpx|geojson|kgl|kml|shp|topojson|wkt)/",
+          "when": "resourceFilename =~ /.*\\.(csv|igc|json|gml|tcx|gpx|geojson|kgl|kml|shp|topojson|wkt)/",
           "group": "navigation"
         }
       ]
@@ -247,13 +258,14 @@
         "geo.data.viewer.create.geojson": {
           "type": "boolean",
           "default": true,
-          "description": "Creates .geojson data file for topojson, kml, gpx and shapefiles"
+          "description": "Creates .geojson data file for topojson, kml, tcx, gpx and shapefiles"
         }
       }
     },
     "gistpad.viewers": [
       {
         "filenames": [
+          ".tcx",
           ".gpx",
           ".geo.json",
           ".geojson",
@@ -293,6 +305,7 @@
     "vscode-test": "^1.3.0"
   },
   "dependencies": {
+    "tcx": "^0.1.0",
     "@mapbox/togeojson": "^0.16.0",
     "@types/ol": "^6.3.1",
     "ol": "^6.3.1",

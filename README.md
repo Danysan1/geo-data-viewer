@@ -17,7 +17,7 @@
 # Features
 
 - Map View 🗺️ for [GeoJSON](https://geojson.org/), [TopoJSON](https://github.com/topojson/topojson/wiki), [keplerg.gl JSON](https://github.com/keplergl/kepler.gl/blob/master/docs/user-guides/b-kepler-gl-workflow/a-add-data-to-the-map.md#supported-file-formats), [KML](https://developers.google.com/kml), [GPX](https://www.topografix.com/gpx.asp), [shapefiles](https://en.wikipedia.org/wiki/Shapefile), [IGC](https://xp-soaring.github.io/igc_file_format/igc_format_2008.html), [WKT](https://en.wikipedia.org/wiki/Well-known_text_representation_of_geometry) and CSV geo data files
-- Create `.geojson` file for `.topojson`, `.kml`, `.gpx`, `.shp` `.prj` and `.dbf` shapefiles
+- Create `.geojson` file for `.topojson`, `.kml`, `.tcx`, `.gpx`, `.shp` `.prj` and `.dbf` shapefiles
 - Dark & Light Map View 🗺️ Controls [UI Themes](https://github.com/RandomFractals/geo-data-viewer#configuration)
 - Dark, Light, Satellite & Outdoors [Map Styles](https://github.com/RandomFractals/geo-data-viewer#configuration)
 - [Map Gallery](https://github.com/RandomFractals/geo-data-viewer#map-gallery) with public [kepler.gl](https://kepler.gl/) map configs to try
@@ -38,7 +38,7 @@
 
 # Supported File Formats
 
-See [kepler.gl file formats](https://github.com/keplergl/kepler.gl/blob/master/docs/user-guides/b-kepler-gl-workflow/a-add-data-to-the-map.md#supported-file-formats) documentation for the supported geo data files in addition to the geo data formats this extension provides for kepler.gl map 🗺️ views: [TopoJSON](https://github.com/topojson/topojson/wiki), [keplerg.gl JSON](https://github.com/keplergl/kepler.gl/blob/master/docs/user-guides/b-kepler-gl-workflow/a-add-data-to-the-map.md#supported-file-formats), [KML](https://developers.google.com/kml), [GPX](https://www.topografix.com/gpx.asp), [shapefiles](https://en.wikipedia.org/wiki/Shapefile), [IGC](https://xp-soaring.github.io/igc_file_format/igc_format_2008.html), [WKT](https://en.wikipedia.org/wiki/Well-known_text_representation_of_geometry)
+See [kepler.gl file formats](https://github.com/keplergl/kepler.gl/blob/master/docs/user-guides/b-kepler-gl-workflow/a-add-data-to-the-map.md#supported-file-formats) documentation for the supported geo data files in addition to the geo data formats this extension provides for kepler.gl map 🗺️ views: [TopoJSON](https://github.com/topojson/topojson/wiki), [keplerg.gl JSON](https://github.com/keplergl/kepler.gl/blob/master/docs/user-guides/b-kepler-gl-workflow/a-add-data-to-the-map.md#supported-file-formats), [KML](https://developers.google.com/kml), [GPX](https://www.topografix.com/gpx.asp), [shapefiles](https://en.wikipedia.org/wiki/Shapefile), [IGC](https://xp-soaring.github.io/igc_file_format/igc_format_2008.html), [WKT](https://en.wikipedia.org/wiki/Well-known_text_representation_of_geometry), [TCX](https://en.wikipedia.org/wiki/Training_Center_XML)
 
 # Map Gallery
 
