@@ -93,12 +93,13 @@
         ]
       },
       {
-        "id": "tcx",
+        "id": "xml",
         "extensions": [
+          ".xml",
           ".tcx"
         ],
         "aliases": [
-          "TCX"
+          "XML"
         ]
       },
       {
